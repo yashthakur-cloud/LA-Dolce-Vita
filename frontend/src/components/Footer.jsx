@@ -61,11 +61,6 @@ const Footer = () => {
                   Orders
                 </Link>
               </li>
-              <li>
-                <Link className="transition hover:text-[#ebab4c]" to="/contact">
-                  Contact
-                </Link>
-              </li>
             </ul>
           </div>
 

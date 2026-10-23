@@ -2,7 +2,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import Reservations from "./pages/Reservations";
 import BookingConfirmed from "./pages/BookingConfirmed";
 import Orders from "./pages/Orders";
@@ -35,14 +34,6 @@ const router = createBrowserRouter([
     element: <div>
         <Navbar />
         <About />
-        <Footer />
-      </div>,
-  },
-  {
-    path: "/contact",
-    element: <div>
-        <Navbar />
-        <Contact />
         <Footer />
       </div>,
   },
