@@ -55,7 +55,7 @@ function Hero() {
               Savor Life,
               <span className="mt-2 block text-[#e5bb7c]">The Italian Way</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-white/80 sm:text-lg sm:leading-8 md:mx-0">
+            <p className="mx-auto mt-6 max-w-xl font-serif text-base leading-7 text-white/85 sm:text-lg sm:leading-8 md:mx-0">
               Authentic Italian flavors, refined elegance, and unforgettable dining, crafted for those who appreciate the extraordinary.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
@@ -75,7 +75,7 @@ function Hero() {
           Enjoy Authentic Italian Cuisine
         </h2>
         <div className="mx-auto mt-3 h-0.5 w-24 rounded-full bg-[#ebab4c]" />
-        <p className="mx-auto mt-3 max-w-2xl px-4 text-sm leading-6 text-white/70 sm:text-base">
+          <p className="mx-auto mt-3 max-w-2xl px-4 font-serif text-base leading-7 text-white/75 sm:text-lg">
           Experience the true taste with our handcrafted dishes made from the finest ingredients.
         </p>
 
@@ -92,7 +92,7 @@ function Hero() {
                     {dish.title}<span className="block text-[#e5bb7c]">{dish.accent}</span>
                   </h3>
                   <div className="mx-auto mt-4 h-0.5 w-20 rounded-full bg-[#ebab4c] lg:mx-0" />
-                  <p className="mt-5 font-serif text-base leading-relaxed text-white/75 sm:text-lg">{dish.description}</p>
+                  <p className="mt-5 font-serif text-lg leading-relaxed text-white/75 sm:text-xl">{dish.description}</p>
                   <Link to="/menu" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#e5bb7c] transition hover:text-[#f2bd68]">
                     Discover our menu <span aria-hidden="true">→</span>
                   </Link>
