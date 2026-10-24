@@ -131,6 +131,50 @@ function Hero() {
         </div>
       </section>
 
+      <section className="relative overflow-hidden border-y border-[#ebab4c]/15 bg-[#11100e] px-5 py-14 text-white sm:px-8 md:py-20 lg:px-12">
+        <div className="pointer-events-none absolute -right-24 -top-28 h-72 w-72 rounded-full border border-[#ebab4c]/10 sm:h-96 sm:w-96" />
+        <div className="pointer-events-none absolute -right-12 -top-16 h-48 w-48 rounded-full border border-[#ebab4c]/10 sm:h-72 sm:w-72" />
+        <div className="relative mx-auto grid max-w-7xl gap-10 xl:grid-cols-[0.9fr_1.1fr] xl:items-center xl:gap-16">
+          <div className="mx-auto w-full max-w-xl text-center xl:text-left">
+            <p className="font-serif text-xs font-semibold uppercase tracking-[0.28em] text-[#ebab4c] sm:text-sm">
+              The Italian Table
+            </p>
+            <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight text-[#e5bb7c] sm:text-4xl lg:text-5xl">
+              More than a meal. A moment to savor.
+            </h2>
+            <p className="mt-5 text-sm leading-7 text-white/70 sm:text-base sm:leading-8">
+              Settle in for comforting Italian favorites, thoughtfully prepared
+              and served with the warmth of a welcoming table.
+            </p>
+            <Link
+              to="/reservations"
+              className="mt-7 inline-flex min-h-11 items-center justify-center rounded-md border border-[#ebab4c]/70 px-6 text-sm font-semibold text-[#e5bb7c] transition hover:bg-[#ebab4c]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d8b27a]"
+            >
+              Join us for dinner
+            </Link>
+          </div>
+
+          <div className="mx-auto grid w-full gap-3 md:grid-cols-3 lg:gap-4">
+            {[
+              ["01", "Wood-fired favorites", "Golden, crisp edges and rich Italian flavor."],
+              ["02", "Slow-crafted sauces", "A comforting finish to every plate of pasta."],
+              ["03", "A warm welcome", "Thoughtful hospitality from the first hello."],
+            ].map(([number, title, description]) => (
+              <article
+                key={number}
+                className="rounded-xl border border-[#ebab4c]/20 bg-black/25 p-5 text-center sm:p-6 xl:text-left"
+              >
+                <span className="font-serif text-sm italic text-[#ebab4c]">{number}</span>
+                <h3 className="mt-4 font-serif text-xl font-semibold text-white sm:text-2xl">
+                  {title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-white/65">{description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="flex w-full flex-col gap-8 bg-[#0c0c0b] px-4 py-12 text-white sm:px-6 md:py-16 lg:py-20">
         <div className="text-center">
           <p className="font-serif text-xs font-semibold uppercase tracking-[0.28em] text-[#ebab4c]">
